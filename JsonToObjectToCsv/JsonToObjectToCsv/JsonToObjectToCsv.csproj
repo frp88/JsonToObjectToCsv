@@ -46,9 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Conexao.cs" />
     <Compile Include="Service\CsvService.cs" />
-    <Compile Include="Domain\Endereco.cs" />
     <Compile Include="Service\JsonService.cs" />
     <Compile Include="Service\ListService.cs" />
     <Compile Include="Domain\Produto.cs" />
