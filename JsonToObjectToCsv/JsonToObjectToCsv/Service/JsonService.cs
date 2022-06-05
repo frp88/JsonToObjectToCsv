@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using Newtonsoft.Json;
 
 namespace JsonToObjectToCsv {
@@ -8,7 +9,7 @@ namespace JsonToObjectToCsv {
         public static List<Produto> DesserializaListaDeProdutos() {
             try {
                 List<Produto> listaProdutos = new List<Produto>();
-                string jsonFilePatch = @"D:\Dados\jsonProdutos.json";
+                string jsonFilePatch = @"C:\Dados\produtos.json";
                 string jsonProdutos = File.ReadAllText(jsonFilePatch);
                 listaProdutos = JsonConvert.DeserializeObject<List<Produto>>(jsonProdutos);
                 return listaProdutos;
